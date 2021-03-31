@@ -1,10 +1,11 @@
-import Layout from "../components/Layout";
+import MyHead from '../components/MyHead';
 
 function Home() {
   return (
-    <Layout myHeadTitle="Home">
+    <>
+      <MyHead title="CorreGiz" />
       <h1>Home</h1>
-    </Layout>
+    </>
   );
 }
 

@@ -1,9 +1,9 @@
-import Head from "next/head";
+import Head from 'next/head';
 
-function MyHead({ title }) {
+function MyHead(props) {
   return (
     <Head>
-      <title>CorreGiz{title ? ` | ${title}` : ""}</title>
+      <title>{props.title}</title>
     </Head>
   );
 }

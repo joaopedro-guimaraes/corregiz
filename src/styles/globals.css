@@ -1,101 +1,36 @@
-:root {
-  --light-main-background: #e7eaed;
-  --light-border: #f3f3f3;
-  --primary: #0070f3;
-  --transition-time: 0.25s;
-}
-
 * {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+
+  --primary: #ffb318;
+  --secondary: #fff;
+  --dark: #3d3d3d;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+body,
+input,
+button,
+textarea {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
 }
 
 .container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.main {
-  width: 100%;
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--light-main-background);
-}
-
-.footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid var(--light-border);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.form-container {
-  width: 700px;
-  background: #ffffff;
-  border: 1px solid var(--light-border);
-  border-radius: 5px;
-  padding: 30px 40px;
-  overflow: hidden;
-}
-
-.input-block-grid {
-  display: flex;
-}
-
-.input-block {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 15px;
-}
-
-.input-block label {
-  margin-bottom: 5px;
-}
-
-.input-block input {
-  width: 100%;
-  height: 40px;
-  padding: 10px;
-  border: 1px solid var(--light-border);
-  border-radius: 5px;
-  transition: background-color var(--transition-time) ease;
-}
-
-.input-block button {
-  height: 40px;
-  background-color: var(--primary);
-  color: #ffffff;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: color var(--transition-time) ease,
-    border-color var(--transition-time) ease,
-    background-color var(--transition-time) ease;
-}
-
-.input-block button:hover {
-  background-color: #ffffff;
-  color: var(--primary);
-  border: 1px solid var(--primary);
-}
-
-.input-block button:focus {
-  border: none;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
 }
