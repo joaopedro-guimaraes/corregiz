@@ -6,50 +6,74 @@
 }
 
 .form {
-  background-color: var(--secondary);
-  border-radius: 0.8rem;
   padding: 2.4rem;
-  margin: 2.4rem 0;
+  margin: 2.4rem;
   display: flex;
   flex-direction: column;
 }
 
-.inputContainer {
+.inputBlock {
   display: flex;
   flex-direction: column;
   margin-bottom: 1.6rem;
   width: 100%;
 }
 
-.inputContainer label {
+.inputBlock label {
   font-weight: 400;
   font-size: 1rem;
   margin-bottom: 0.8rem;
 }
 
-.inputContainer input {
+.inputBlock input {
   border: none;
   border-bottom: 1px solid var(--dark);
   height: 2.2rem;
 }
 
-.inputContainer input:hover,
-.inputContainer input:focus {
+.inputBlock input:hover,
+.inputBlock input:focus {
   border-bottom: 2px solid var(--primary);
-  margin-bottom: -1px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1.6rem;
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
 }
 
 .button {
   height: 2.2rem;
   background: var(--primary);
   border: 0 none;
-  border-radius: 0.8rem;
+  border-radius: 0.4rem;
   cursor: pointer;
   color: var(--secondary);
+  transition: opacity 0.25s ease;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.resultado {
+  margin-top: 1.6rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 980px) {
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .form {
+    padding: 0.8rem;
+    margin: 0.8rem;
+    display: flex;
+    flex-direction: column;
+  }
 }

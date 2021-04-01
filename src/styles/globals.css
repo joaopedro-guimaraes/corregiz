@@ -3,13 +3,20 @@
   margin: 0;
   box-sizing: border-box;
 
+  --light-background: #fff8ea;
   --primary: #ffb318;
   --secondary: #fff;
-  --dark: #3d3d3d;
+  --dark: #504538;
+  --light: #b6a99a;
+  --light-green: #00e2a0;
+  --green: #00a96c;
+  --dark-green: #005248;
+  --red: #c2554f;
 }
 
 body {
-  background-color: #f3f3f3;
+  background-color: var(--light-background);
+  color: var(--dark);
 }
 
 body,
@@ -30,7 +37,13 @@ select:focus {
 }
 
 .container {
-  width: 80%;
-  max-width: 800px;
+  width: 90%;
+  max-width: 900px;
   margin: auto;
+}
+
+.card {
+  background-color: var(--secondary);
+  border-radius: 0.4rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
