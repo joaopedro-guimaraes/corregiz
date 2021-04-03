@@ -23,7 +23,7 @@ body,
 input,
 button,
 textarea {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -34,16 +34,4 @@ select:focus {
   box-shadow: 0 0 0 0;
   border: 0 none;
   outline: 0;
-}
-
-.container {
-  width: 90%;
-  max-width: 900px;
-  margin: auto;
-}
-
-.card {
-  background-color: var(--secondary);
-  border-radius: 0.4rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }

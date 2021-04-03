@@ -12,30 +12,6 @@
   flex-direction: column;
 }
 
-.inputBlock {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.6rem;
-  width: 100%;
-}
-
-.inputBlock label {
-  font-weight: 400;
-  font-size: 1rem;
-  margin-bottom: 0.8rem;
-}
-
-.inputBlock input {
-  border: none;
-  border-bottom: 1px solid var(--dark);
-  height: 2.2rem;
-}
-
-.inputBlock input:hover,
-.inputBlock input:focus {
-  border-bottom: 2px solid var(--primary);
-}
-
 .inputContainer {
   display: flex;
   justify-content: center;
